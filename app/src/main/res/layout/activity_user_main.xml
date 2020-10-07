@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UserMainActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical"
+    tools:context=".user.UserMainActivity">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Laundry"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="506dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/laundry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="100dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:id="@+id/orderMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_green"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/laundry3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="Order Now"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myOrderMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_yellow"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/order" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="My   Order"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myAccountMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_orange"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="My Account"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/signOutMenu"
+                android:layout_width="32dp"
+                android:layout_height="120dp"
+                android:layout_weight="0.25"
+                android:background="#f23"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_baseline_exit_to_app_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="115dp"
+                    android:text="Sign Out"
+                    android:textColor="#fff"
+                    android:textSize="32sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
